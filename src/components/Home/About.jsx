@@ -1,38 +1,58 @@
-import React from 'react'
+import React from "react";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "../ui/card";
+import { Button } from "../ui/button";
+import { LuCheck } from "react-icons/lu";
+
+const statements = [
+  {title: 'We Build Bold', words: 'Smart solutions. Real results. No fluff.', bg: '', texts: 'text-slate-600', header: 'text-slate-900'}, 
+  {title: 'Client Commitment', words: 'Fostering trust through excellence and strategic collaboration.', bg: 'bg-gradient-to-br from-[#1A1787] to-blue-500', texts: 'text-white', header: 'text-white'}, 
+  {title: 'Why It Matters', words: 'Turning potential into extraordinary success, every step.', bg: '', texts: 'text-slate-600', header: 'text-slate-900'},
+]
 
 const About = () => {
   return (
-    <div className='bg-[#1A1787] px-20 py-10'>
-        <div class="flex ml-10 items-center">
-          <div
-            class="w-10 flex rounded-full h-[.2rem] mt-[.3rem] items-center bg-blue-200"
-          ></div>
-          <span class="ml-2 text-blue-200 text-2xl font-bold"
-            >About Company</span
-          >
-        </div>
-        <div>
-          <h3
-            class="text-4xl font-bold text-sky-200 flex flex-col items-start mb-10"
-          >
-            <span>Consulting with clarity. </span
-            ><span>Delivering with purpose.</span>
-          </h3>
-          <p class="text-lg font-semibold text-sky-100 my-10 text-left">
-            At L4 Enterprise Consulting, we’re not just consultants — we’re
-            strategic partners. With over 15 years of cross-industry experience,
-            we specialize in guiding businesses and government organizations
-            through complex digital transformations, operational challenges, and
-            strategic shifts. Our approach is rooted in purpose, driven by
-            outcomes, and backed by proven technical expertise. Whether it’s
-            modernizing workflows, delivering tailored tech solutions, or
-            optimizing performance — we deliver results that move the needle. We
-            believe in human-first transformation powered by technology —
-            because when purpose leads, success follows.
-          </p>
-        </div>
+    <div className="px-20 py-10 relative flex justify-between items-center">
+      <Card className="w-[30rem] h-[25rem] border-none shadow-2xl">
+        <CardTitle>
+          <CardHeader className="text-4xl text-slate-800 font-semibold">
+            Let us do the work, so that you can focus on what matters.
+          </CardHeader>
+        </CardTitle>
+        <CardContent>
+          <CardDescription className="text-md font-[600] word-break text-slate-500">
+            L4 Enterprise Consulting is a purpose-driven small business
+            specializing in Business Consulting, Digital Transformation,
+            Technical Delivery, and Technology Management.
+          </CardDescription>
+        </CardContent>
+        <Button className="mt-8 ml-5 px-7 py-6 text-sm text-white bg-[#1A1787] hover:border hover:border-[#1A1787] rounded-none hover:bg-transparent hover:text-[#1A1787] transition-smooth">
+          Learn More
+        </Button>
+      </Card>
+      <img src="aboutImage.png" className="object-contain h-[35rem] absolute bottom-[-.1rem] left-[40%]" alt="" />
+      <div className="flex flex-col gap-5">
+        {
+          statements.map((statement) => (
+            <div className={`flex justify-start gap-5 shadow-lg h-[7rem] w-[24rem] px-6 items-center ${statement.bg}`}>
+              <div className="border h-fit text-4xl text-green-400 rounded-full w-fit">
+                <LuCheck/>
+              </div>
+              <div >
+                <p className={`text-xl font-bold ${statement.header}`}>{statement.title}</p>
+                <p className={`text-md font-[400] text-slate-600 ${statement.texts}`}>{statement.words}</p>
+              </div>
+            </div>
+          ))
+        }
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;
