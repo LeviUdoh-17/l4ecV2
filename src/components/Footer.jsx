@@ -3,15 +3,15 @@ import React from "react";
 const Footer = () => {
     const year = new Date().getFullYear();
   return (
-    <div>
-      <footer class="bg-slate-950 flex justify-between md:px-30 py-10 lg:gap-0 lg:flex-row flex-col gap-7 px-5">
-        <div class="flex items-start gap-2">
+    <div className="">
+      <footer class="bg-slate-950 flex justify-between text-center md:text-start md:px-30 py-10 lg:gap-0 lg:flex-row flex-col gap-7 px-5">
+        <div class="flex items-start gap-2 mx-auto md:mx-0">
           <img src="/logo.png" alt="Logo" class="w-[4rem]" />
           <p class="flex justify-center items-center flex-col mt-1 font-bold text-white">
             ENTERPRISE <span class="font-normal text-xs">CONSULTING LLC</span>
           </p>
         </div>
-        <div class="text-white flex justify-around items-center gap-7">
+        {/* <div class="text-white flex justify-around items-center gap-7">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -73,7 +73,7 @@ const Footer = () => {
             <rect width="4" height="12" x="2" y="9" />
             <circle cx="4" cy="4" r="2" />
           </svg>
-        </div>
+        </div> */}
         <div>
           <p id="copyright" class="text-white flex items-center pt-2">
             &copy; {year} L4 Enterprise Consulting. All rights reserved.

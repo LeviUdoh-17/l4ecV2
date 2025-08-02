@@ -8,7 +8,7 @@ import Footer from "../components/Footer";
 
 const Contact = () => {
   return (
-    <section id="contact" className="bg-gradient-hero w-screen">
+    <section id="contact" className="bg-gradient-hero">
         <Navbar/>
       <div className="container py-20  mx-auto px-4">
         <div className="text-center text-white mb-16">

@@ -14,8 +14,12 @@ export default {
 			center: true,
 			padding: '2rem',
 			screens: {
+				'md': '860px',
 				'2xl': '1400px'
 			}
+		},
+		screens: {
+			'md': '860px',
 		},
 		extend: {
 			colors: {

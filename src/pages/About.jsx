@@ -25,7 +25,7 @@ const About = () => {
   ];
 
   return (
-    <div className="min-h-screen w-screen">
+    <div className="min-h-screen">
       <section className="bg-gradient-hero text-white">
         <Navbar/>
       {/* Hero Section */}
