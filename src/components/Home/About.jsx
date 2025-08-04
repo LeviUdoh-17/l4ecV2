@@ -17,8 +17,8 @@ const statements = [
 
 const About = () => {
   return (
-    <div className="px-20 py-10 relative flex justify-between items-center">
-      <Card className="w-[30rem] h-[25rem] border-none shadow-2xl">
+    <div className="px-20 py-10 pt-10 lg:pt-0 relative flex flex-col lg:flex-row justify-between gap-10 lg:gap-0 items-center">
+      <Card className="w-[30rem] h-[25rem] border-none shadow-2xl lg:mt-0 mt-25">
         <CardTitle>
           <CardHeader className="text-4xl text-slate-800 font-semibold">
             Let us do the work, so that you can focus on what matters.
@@ -35,7 +35,7 @@ const About = () => {
           Learn More
         </Button>
       </Card>
-      <img src="aboutImage.png" className="object-contain h-[35rem] absolute bottom-[-.1rem] left-[40%]" alt="" />
+      <img src="aboutImage.png" className="object-contain h-[35rem] hidden lg:block absolute bottom-[-.1rem] left-[40%]" alt="" />
       <div className="flex flex-col gap-5">
         {
           statements.map((statement) => (

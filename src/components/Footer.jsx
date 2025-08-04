@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className="">
       <footer class="bg-slate-950 flex justify-between text-center md:text-start md:px-30 py-10 lg:gap-0 lg:flex-row flex-col gap-7 px-5">
-        <div class="flex items-start gap-2 mx-auto md:mx-0">
+        <div class="flex items-start justify-center lg:justify-start gap-2 mx-auto md:mx-0">
           <img src="/logo.png" alt="Logo" class="w-[4rem]" />
           <p class="flex justify-center items-center flex-col mt-1 font-bold text-white">
             ENTERPRISE <span class="font-normal text-xs">CONSULTING LLC</span>
@@ -74,8 +74,8 @@ const Footer = () => {
             <circle cx="4" cy="4" r="2" />
           </svg>
         </div> */}
-        <div>
-          <p id="copyright" class="text-white flex items-center pt-2">
+        <div className="text-center">
+          <p id="copyright" class="text-white flex items-center text-center justify-center lg:justify-start pt-2">
             &copy; {year} L4 Enterprise Consulting. All rights reserved.
           </p>
         </div>
