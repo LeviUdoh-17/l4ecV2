@@ -18,7 +18,7 @@ const HeroSection = () => {
             </div>
             <div id='Right' className='relative w-full h-full'>
                 <img src="/bgPattern.png" alt="Background pattern" className='absolute object-contain w-[38rem] right-10 top-0' />
-                <img src="/2.png" alt="human in the hero section" className='object-contain w-[30rem] absolute z-30 top-[1rem] lg:top-[-0.2rem] right-20 xl:right-10 xl:w-[40rem]' />
+                <img src="/2.png" alt="human in the hero section" className='object-contain w-[30rem] absolute z-30 top-[3rem] lg:top-[-0.2rem] right-20 xl:right-10 xl:w-[40rem]' />
             </div>
         </div>
         {/* MOBILE VIEW */}
