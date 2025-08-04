@@ -48,7 +48,7 @@ const Navbar = () => {
             </div>
           ))
         }
-        <button className='py-[.5rem] truncate w-fit px-4 font-bold bg-gradient-to-br from-blue-400 to-blue-200 text-white'
+        <button className='py-[.5rem] truncate w-fit px-4 font-bold bg-gradient-to-br cursor-pointer from-blue-400 to-blue-200 text-white'
         onClick={()=>{
           navigate('/contact');
         }}>Contact Us</button>
@@ -61,7 +61,7 @@ const Navbar = () => {
             </div>
           ))
         }
-        <button className='py-[.5rem] truncate w-fit px-4 font-bold bg-gradient-to-br from-blue-400 to-blue-200 text-white'
+        <button className='py-[.5rem] truncate w-fit px-4 font-bold bg-gradient-to-br from-blue-400 to-blue-200 cursor-pointer text-white'
         onClick={()=>{
           navigate('/contact');
         }}>Contact Us</button>

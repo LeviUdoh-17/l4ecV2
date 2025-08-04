@@ -80,7 +80,7 @@ const Contact = () => {
                 />
               </div>
               
-              <Button variant="accent" size="lg" className="w-full">
+              <Button variant="outline" size="lg" className="w-full bg-transparent border-blue-400 text-blue-400 cursor-pointer">
                 Send Message
               </Button>
             </CardContent>

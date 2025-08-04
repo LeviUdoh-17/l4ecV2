@@ -141,9 +141,11 @@ body {
 .bg-gradient-primary {
   background: var(--gradient-primary);
 }
-
 .bg-gradient-accent {
   background: hsl(var(--gradient-accent));
+}
+.bg-input{
+  background: hsl(var(--input));
 }
 
 .bg-muted {

@@ -35,7 +35,7 @@ const About = () => {
           Learn More
         </Button>
       </Card>
-      <img src="aboutImage.png" className="object-contain h-[35rem] hidden lg:block absolute bottom-[-.1rem] left-[40%]" alt="" />
+      <img src="aboutImage.png" className="object-contain h-[30rem] hidden lg:block absolute bottom-[-.1rem] left-[40%]" alt="" />
       <div className="flex flex-col gap-5">
         {
           statements.map((statement) => (

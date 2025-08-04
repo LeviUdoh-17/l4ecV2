@@ -29,7 +29,7 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="relative z-20 mx-6 mt-10 lg:mt-0 bottom-0 lg:bottom-52 bg-background">
+    <section id="services" className="relative z-20 mx-6 mt-10 lg:mt-0 bottom-0 lg:bottom-30 bg-background">
       <div className="container mx-auto px-4">
         {/* <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">
